@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Enterprise UKIZA Pipeline Plan · Adam Baig</title>
+<meta name="description" content="An AI-researched SDR plan for Tenable's Enterprise UKIZA team, by Adam Baig.">
+<link rel="icon" href="logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0A0A0A;--panel:#131313;--raise:#1A1A1A;--line:#262626;--fg:#fff;--soft:#D6D6D6;--muted:#A3A3A3;--pink:#FF4FA0;--peach:#FF9A52;--good:#8FE3AE;--grad:linear-gradient(90deg,#FF9A52,#FF4FA0)}
+*{box-sizing:border-box}
+html{scroll-snap-type:y proximity;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:'Plus Jakarta Sans',Inter,system-ui,sans-serif;line-height:1.5}
+section{min-height:100vh;scroll-snap-align:start;display:flex;align-items:center;justify-content:center;padding:48px 20px;border-bottom:1px solid var(--line)}
+.w{width:100%;max-width:1040px}
+.kick{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--peach);font-weight:700;margin:0 0 10px}
+h1{font-size:clamp(32px,5.4vw,58px);line-height:1.08;margin:0 0 18px;letter-spacing:-.02em}
+h2{font-size:clamp(26px,3.6vw,40px);line-height:1.15;margin:0 0 14px;letter-spacing:-.01em}
+p.lead{font-size:clamp(16px,1.6vw,19px);color:var(--soft);max-width:760px;margin:0 0 22px}
+.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.logo{width:220px;margin-bottom:34px}
+.meta{color:var(--muted);font-size:15px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+.card h3{margin:0 0 6px;font-size:16px}
+.card p{margin:0;color:var(--soft);font-size:14.5px}
+.stat .n{font-size:clamp(28px,3.4vw,38px);font-weight:800;line-height:1.1}
+.stat .l{color:var(--muted);font-size:13.5px;margin-top:4px}
+.src{font-size:12px;color:var(--muted);margin-top:18px}
+.src a{color:var(--muted)}
+td a{color:var(--peach)}
+.steps{counter-reset:s;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+.steps .card{position:relative;padding-top:42px}
+.steps .card::before{counter-increment:s;content:counter(s);position:absolute;top:14px;left:18px;width:22px;height:22px;border-radius:50%;background:var(--grad);color:#0A0A0A;font-weight:800;font-size:12px;display:grid;place-items:center}
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+td,th{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:600;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase}
+td.k{color:var(--peach);font-weight:700;white-space:nowrap}
+.q{color:var(--muted);font-style:italic}
+.msg{background:var(--raise);border:1px solid var(--line);border-left:3px solid var(--pink);border-radius:10px;padding:16px 18px;color:var(--soft);font-size:15px;white-space:pre-wrap}
+.pill{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:6px 14px;margin:4px 6px 4px 0;font-size:14px;color:var(--soft)}
+.two{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+video{width:100%;border-radius:14px;border:1px solid var(--line);background:#000}
+a.btn{display:inline-block;background:var(--grad);color:#0A0A0A;font-weight:800;text-decoration:none;border-radius:10px;padding:12px 20px;margin-right:10px}
+.nav{position:fixed;right:16px;bottom:16px;display:flex;gap:6px;z-index:5}
+.nav button{background:var(--raise);color:var(--fg);border:1px solid var(--line);border-radius:8px;width:38px;height:38px;font-size:16px;cursor:pointer}
+@media(max-width:600px){.nav{display:none}td.k{white-space:normal}}
+@media print{html{scroll-snap-type:none}section{min-height:auto;page-break-after:always}.nav{display:none}}
+</style>
+</head>
+<body>
+
+<section id="s1"><div class="w">
+  <img class="logo" src="logo.png" alt="PeachBox.">
+  <p class="kick">Enterprise UKIZA · Sales Development</p>
+  <h1>How I would build <span class="grad">greenfield pipeline</span> for Tenable</h1>
+  <p class="lead">An AI-researched SDR plan: what I learned about Tenable, the UK "why now", six real target accounts with one mapped in MEDDPICC, and my first 90 days.</p>
+  <p class="meta">Adam Baig · London · Founder, PeachBox. · October 2026</p>
+</div></section>
+
+<section id="s2"><div class="w">
+  <p class="kick">1 · What I learned about Tenable</p>
+  <h2>The platform is winning the new business</h2>
+  <p class="lead">Q3 2026 shows customers moving from point scanning to the Tenable One exposure management platform, and Tenable leaning hard into agentic AI.</p>
+  <div class="grid">
+    <div class="card stat"><div class="n grad">59%</div><div class="l">of new business on Tenable One in Q3, up from 39% a year earlier</div></div>
+    <div class="card stat"><div class="n grad">413</div><div class="l">new enterprise platform customers added in Q3 2026</div></div>
+    <div class="card stat"><div class="n grad">39</div><div class="l">net new six-figure customers in Q3; new six-figure ACV up 18% year on year</div></div>
+    <div class="card stat"><div class="n grad">~15x</div><div class="l">what a platform customer pays versus a Nessus-only customer, per management</div></div>
+    <div class="card stat"><div class="n grad">$276.4M</div><div class="l">Q3 revenue, up 9.5%; full-year guide $1.084B to $1.087B</div></div>
+    <div class="card stat"><div class="n grad">5x</div><div class="l">growth in Hexa AI prompt volume; customers resolving 2 to 3x more critical exposures</div></div>
+  </div>
+  <p class="src">Sources: <a href="https://www.globenewswire.com/news-release/2026/10/28/3390740/0/en/tenable-announces-third-quarter-2026-financial-results.html">Tenable Q3 2026 results</a> · <a href="https://finance.yahoo.com/markets/stocks/articles/tenable-holdings-inc-tenb-q3-110654339.html">Q3 2026 earnings call highlights</a></p>
+</div></section>
+
+<section id="s3"><div class="w">
+  <p class="kick">2 · What that means for an Enterprise SDR</p>
+  <h2>Open the door to the platform conversation, not a scanner swap</h2>
+  <div class="two">
+    <div class="card"><h3>Lead with exposure, not vulnerabilities</h3><p>Buyers can already count CVEs. The six-figure conversation is about which exposures across IT, cloud, identity and OT actually put the business at risk, and proving it to a board or regulator.</p></div>
+    <div class="card"><h3>AI is now the product story</h3><p>Tenable partnered with Anthropic in May 2026 to bring Claude-powered workflows into Hexa AI, and Q3 added an always-on fleet of AI agents. An SDR who uses AI well in their own research is speaking the same language as the product.</p></div>
+    <div class="card"><h3>Greenfield is where the growth is</h3><p>Management called Q3 a record for net new logos, with a high share landing straight on Tenable One. That is exactly the Enterprise UKIZA hunting brief.</p></div>
+    <div class="card"><h3>Expect bundling objections</h3><p>Management flagged large endpoint vendors competing with aggressive bundling. Discovery should surface what "good enough" looks like to the buyer before the Territory Manager joins.</p></div>
+  </div>
+  <p class="src">Sources: <a href="https://www.globenewswire.com/news-release/2026/05/20/3298483/0/en/tenable-partners-with-anthropic-for-ai-driven-exposure-management.html">Tenable and Anthropic partnership, 20 May 2026</a> · <a href="https://www.globenewswire.com/news-release/2026/10/28/3390740/0/en/tenable-announces-third-quarter-2026-financial-results.html">Q3 2026 results</a> · <a href="https://finance.yahoo.com/markets/stocks/articles/tenable-holdings-inc-tenb-q3-110654339.html">earnings call highlights</a></p>
+</div></section>
+
+<section id="s4"><div class="w">
+  <p class="kick">3 · The UK "why now"</p>
+  <h2>The Cyber Security and Resilience Bill creates new regulated buyers</h2>
+  <p class="lead">The Bill extends the UK's NIS rules to organisations that were never regulated before. Each one needs to show it knows where it is exposed, and most have never bought an exposure platform.</p>
+  <div class="grid">
+    <div class="card"><h3>Managed service providers</h3><p>A new regulated category: relevant managed service providers, overseen by the Information Commission.</p></div>
+    <div class="card"><h3>Data centres</h3><p>Regulated as a category for the first time, with thresholds set in secondary legislation.</p></div>
+    <div class="card"><h3>Critical suppliers</h3><p>Suppliers whose failure would disrupt a regulated entity can be designated and given duties.</p></div>
+    <div class="card"><h3>Real penalties</h3><p>Up to £17m or 4% of global turnover for serious breaches, and up to £100,000 a day for ongoing non-compliance.</p></div>
+  </div>
+  <p class="lead" style="margin-top:20px;font-size:16px">Timing: in the House of Lords in 2026, Royal Assent expected late 2026, main duties expected around 2028. That gives a 12 to 24 month buying window to get ahead of it.</p>
+  <p class="src">Source: <a href="https://compliancehub.wiki/uk-cyber-security-resilience-bill-lords-committee-september-2026-msp-data-centre-scope/">Lords Committee stage summary, Aug 2026</a> · <a href="https://www.trowers.com/insights/2026/february/the-cyber-security-and-resilience-bill">Trowers &amp; Hamlins analysis</a></p>
+</div></section>
+
+<section id="s5"><div class="w">
+  <p class="kick">4 · My research workflow</p>
+  <h2>AI to <span class="grad">elevate</span> the outreach, not automate it</h2>
+  <p class="lead">I use Claude and Gemini for the research and write the message myself. I built this workflow into PeachBox., the AI platform I founded, so I can show it rather than describe it.</p>
+  <div class="steps">
+    <div class="card"><h3>Signal</h3><p>Find the account's "why now": regulation, a new security leader, hiring for a vulnerability backlog, an incident, a cloud move.</p></div>
+    <div class="card"><h3>Committee</h3><p>Map the economic buyer, champion, technical evaluator and influencer by role.</p></div>
+    <div class="card"><h3>MEDDPICC draft</h3><p>Fill what the research can prove. Every gap becomes a discovery question.</p></div>
+    <div class="card"><h3>Message</h3><p>One researched, specific first touch with a small ask. A human approves every send.</p></div>
+    <div class="card"><h3>Handover</h3><p>Meeting booked, notes attached, open questions listed for the Territory Manager.</p></div>
+  </div>
+  <div style="margin-top:22px"><video src="PeachBox-SDR-Lead-Finder-Demo.mp4" controls playsinline preload="metadata" poster="demo-poster.png"></video>
+  <p class="src">48-second PeachBox. demo running these real accounts from public sources.</p></div>
+</div></section>
+
+<section id="s6"><div class="w">
+  <p class="kick">5 · Six real UKIZA target accounts</p>
+  <h2>Mapped in PeachBox. from public signals</h2>
+  <p class="lead">Two accounts per country, each with a public "why now" and a first-touch angle. Decision makers are listed by role only. Some may already be Tenable customers; that is a 30-second CRM check before any outreach.</p>
+  <div class="card" style="overflow-x:auto"><table>
+    <tr><th>Account</th><th>Why now (public signal)</th><th>Entry point</th><th>First-touch angle</th></tr>
+    <tr><td class="k">Pulsant<br><span class="pill" style="font-size:11px">UK</span></td><td>Data centre <i>and</i> managed IT provider: the Cyber Security and Resilience Bill regulates it twice. £10m high-density AI facility in Milton Keynes (Feb 2026). <a href="https://digitalisationworld.com/news/71679/pulsant-invests-10-million-in-high-density-data-facility-in-milton-keynes">source</a></td><td>Head of Information Security</td><td>Rank exposure across client IT, cloud and site OT before the regulator asks</td></tr>
+    <tr><td class="k">Jaguar Land Rover<br><span class="pill" style="font-size:11px">UK</span></td><td>The 2025 cyberattack halted production for weeks and cost the UK economy an estimated £1.9bn, the costliest cyber event in UK history. <a href="https://www.itpro.com/security/cyber-attacks/jaguar-land-rover-cyber-attack-financial-impact-cyber-monitoring-centre">source</a></td><td>CISO, Head of OT / Plant Engineering</td><td>Continuous visibility of IT-to-OT attack paths across plants, and the same question for suppliers</td></tr>
+    <tr><td class="k">Echelon Data Centres<br><span class="pill" style="font-size:11px">Ireland</span></td><td>€1.7bn Morgan Stanley financing (Feb 2026) to expand 8 campuses (1.2GW). NIS2 covers data centres; Ireland's bill is a priority after a July 2026 CJEU referral. <a href="https://www.irishtimes.com/business/2026/02/24/data-centre-company-echelon-secures-17bn-loan-financing-to-continue-expansion">source</a> · <a href="https://www.lawsociety.ie/gazette/top-stories/2026/october/government-pledge-on-delayed-cyber-bill/">source</a></td><td>Head of Security, CTO</td><td>Build exposure management in while the campuses are being built, not after</td></tr>
+    <tr><td class="k">Uisce Éireann<br><span class="pill" style="font-size:11px">Ireland</span></td><td>National water utility: an essential sector under NIS2 and Ireland's new critical-entities resilience strategy (CER compliance due Oct 2026). Heavy OT estate. <a href="https://www.pulse.bot/cybersecurity/news/irish-government-launches-cni-resilience-plan-801278c8-eba1-4406-be0f-2b95a82693ec">source</a></td><td>CISO, Head of OT Security</td><td>Tenable already works on water cyber resilience (Project Watershed in the US): bring that playbook to Ireland</td></tr>
+    <tr><td class="k">Toyota South Africa Motors<br><span class="pill" style="font-size:11px">South Africa</span></td><td>Named among South African companies with a reported cyber incident in Aug to Sep 2026. Manufacturing plant and dealer network (IT and OT). <a href="https://www.dailymaverick.co.za/article/2026-09-22-sa-is-under-cyber-siege-and-the-situation-will-only-get-worse/">source</a></td><td>Head of IT Security, Plant IT/OT lead</td><td>After an incident, the board asks "where else are we exposed?" One view across IT and OT answers it</td></tr>
+    <tr><td class="k">Bidvest Bank<br><span class="pill" style="font-size:11px">South Africa</span></td><td>Named in the same reported incidents. 85% of SA ransomware victims link the breach to an identity compromise (Sophos 2026). <a href="https://www.dailymaverick.co.za/article/2026-09-22-sa-is-under-cyber-siege-and-the-situation-will-only-get-worse/">source</a></td><td>CISO, Head of Identity</td><td>Identity exposure is the entry point in SA: show the attack paths from identities to crown-jewel systems</td></tr>
+  </table></div>
+</div></section>
+
+<section id="s6b"><div class="w">
+  <p class="kick">6 · One account in depth</p>
+  <h2>Pulsant: MEDDPICC before the first call</h2>
+  <div class="two">
+    <div class="card"><table>
+      <tr><td class="k">Metrics</td><td>Time to fix critical exposures across hosting, cloud and site OT</td></tr>
+      <tr><td class="k">Economic buyer</td><td>CEO or COO: the regulated entity carries client-contract risk</td></tr>
+      <tr><td class="k">Decision criteria</td><td>One view across IT, cloud and data centre OT; audit-ready reporting for clients and regulator</td></tr>
+      <tr><td class="k">Decision process</td><td class="q">Unknown: ask on discovery</td></tr>
+      <tr><td class="k">Paper process</td><td class="q">Unknown: procurement threshold?</td></tr>
+      <tr><td class="k">Identify pain</td><td>New sites widen the estate faster than the security team grows</td></tr>
+      <tr><td class="k">Champion</td><td>Head of Information Security (confirm on discovery)</td></tr>
+      <tr><td class="k">Competition</td><td class="q">Unknown: current scanner or bundle?</td></tr>
+    </table></div>
+    <div><div class="msg">Hi [Name],
+
+The Cyber Security and Resilience Bill will regulate Pulsant twice: once as a data centre operator and once as a managed service provider. With the new high-density facility in Milton Keynes coming online, your estate now spans client IT, cloud and site systems like power and cooling.
+
+Most teams can count their vulnerabilities; few can show which ones actually put a client or a site at risk. Worth 15 minutes on ranking exposure by business risk across IT, cloud and OT, before the regulator asks?</div>
+    <p class="src">Why it works: a real compelling event, a visible change to their estate, and a small ask. No pricing, no product dump. Gaps in the map become discovery questions for the Territory Manager.</p></div>
+  </div>
+</div></section>
+
+<section id="s7"><div class="w">
+  <p class="kick">7 · My first 90 days</p>
+  <h2>Ramp fast, then hunt with the Territory Managers</h2>
+  <div class="grid">
+    <div class="card"><h3>Days 1 to 30: learn</h3><p>Tenable One, Hexa AI and the exposure story; shadow top SDRs and discovery calls; agree target account lists with each Territory Manager; build my research prompts and templates.</p></div>
+    <div class="card"><h3>Days 31 to 60: build</h3><p>Run multi-touch sequences into the first greenfield accounts (MSPs, data centres, OT-heavy utilities and manufacturers); first meetings booked and handed over with full notes.</p></div>
+    <div class="card"><h3>Days 61 to 90: scale</h3><p>Full activity at target; share what is working with the EMEA team; feed messaging insights back to marketing and the Territory Managers.</p></div>
+  </div>
+  <p class="lead" style="margin-top:20px;font-size:16px">Target segments for UKI greenfield: managed service providers and data centres (new under the Bill), water and energy (OT exposure), and mid-to-large enterprises moving workloads to the cloud.</p>
+</div></section>
+
+<section id="s8"><div class="w">
+  <p class="kick">8 · Why me</p>
+  <h2>A proven hunter who is genuinely curious about cyber</h2>
+  <div class="grid">
+    <div class="card stat"><div class="n grad">~400</div><div class="l">outbound calls a week, consistently 4+ qualified meetings a week</div></div>
+    <div class="card stat"><div class="n grad">20+ yrs</div><div class="l">opening New Logo enterprise accounts: Siemens, GE Power, BP, Inpex</div></div>
+    <div class="card stat"><div class="n grad">16</div><div class="l">hands-on cloud security and DevSecOps labs: scanning, IAM, Kubernetes, incident response</div></div>
+    <div class="card stat"><div class="n grad">3</div><div class="l">Google certificates: Cybersecurity, AI and Cloud. CompTIA Security+ in progress</div></div>
+  </div>
+  <p class="lead" style="margin-top:22px">I founded PeachBox. and built its AI prospecting engine with Claude. I want to bring that research discipline, and plenty of grit, to the Enterprise UKIZA team.</p>
+  <p><a class="btn" href="https://www.linkedin.com/in/adambaiguk">Connect on LinkedIn</a><a class="btn" style="background:transparent;color:#fff;border:1px solid var(--line)" href="mailto:skynet78650@outlook.com">Email me</a></p>
+  <img src="logo.png" alt="PeachBox." style="width:140px;margin-top:26px;opacity:.85">
+</div></section>
+
+<div class="nav"><button aria-label="Previous" onclick="go(-1)">↑</button><button aria-label="Next" onclick="go(1)">↓</button></div>
+<script>
+const S=[...document.querySelectorAll('section')];
+function cur(){let i=0;S.forEach((s,k)=>{if(s.getBoundingClientRect().top<innerHeight/2)i=k});return i}
+function go(d){const i=Math.max(0,Math.min(S.length-1,cur()+d));S[i].scrollIntoView({behavior:'smooth'})}
+addEventListener('keydown',e=>{if(['ArrowDown','PageDown',' ','ArrowRight'].includes(e.key)){e.preventDefault();go(1)}if(['ArrowUp','PageUp','ArrowLeft'].includes(e.key)){e.preventDefault();go(-1)}});
+</script>
+</body>
+</html>
